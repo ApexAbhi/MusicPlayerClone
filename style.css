@@ -1,0 +1,174 @@
+/*---------------------------------------------CSS RESET-----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+body{
+	background:url("images/retro-g4b34c8cf0_1920.jpg");
+	color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: #180707;
+	background-image: linear-gradient(180deg, #180707 0%, #070c20 50%, #7d2d2d 100%);
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+	
+	
+}
+
+.logo {
+    display: flex;
+    align-items: center;	
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 40px;
+    padding: 0 8px;
+}
+
+.add{
+	margin-left: 70%;
+}
+
+.playlist{
+	margin:0 10%;
+	min-height: 78vh;
+}
+
+.playbar{
+	background-color: black;
+	position: sticky;
+	bottom: 0;
+	height: 132px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+	background-color: #180707;
+	background-image: linear-gradient(180deg, #180707 0%, #070c20 50%, #7d2d2d 100%);
+	
+}
+
+#bar{
+	width: 80%;
+	cursor: pointer;
+	background: linear-gradient(to right, red 0%, orange 50%, #fff 50%, #fff 100%);
+  	border: solid 1px red;
+ 	border-radius: 8px;
+  	height: 7px;
+  	outline: none;
+    -webkit-appearance: none;
+}
+
+
+.icons{
+	margin-top: 12px;
+}
+
+.icons i{
+	display:inline-block;
+}
+
+.info img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+	margin-left: 3%;
+}
+
+.info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width:70%;
+	margin:0 15%;
+	margin-top: 60px;
+}
+
+.item{
+	display: inline-block;
+	margin: 2%;
+}
+
+.item img{
+	width: 150px;
+	height: 100px;
+}
+
+.songName{
+	display: flex;
+
+	width: 150px;
+	height: 50px;
+}
+
+.s{
+	display: flex;
+	justify-content: center;
+}
+.s i{
+	cursor: pointer;
+}
+.icons i{
+	cursor: pointer;
+}
+
+
+@media(max-width:1500px){
+	body{
+		background-image: linear-gradient(to right, #434343 0%, black 100%);
+	}
+}
